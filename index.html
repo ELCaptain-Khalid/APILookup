@@ -1,0 +1,33 @@
+<!-- This HTML page is created so the user can know which zipcode belongs to which state as we ask them
+    to give us an input. Once given, we will use access an API doc and retieve that information
+    with the help of Jscript
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--   Conntecting the Js and css files -->
+    <script src="API.js" defer></script>
+    <link rel="stylesheet" href="style.CSS">
+    
+    <title> 🤔 Where do you live based on a zipcode? here is how. 🤔</title>
+
+    </head>
+<!--  -->
+<body>
+
+    <p>
+        Please enter a U.S based zipcode 🗽
+        <!-- Getting the user input via invoking the input feature so we can pass it to the Js and retreive the API info  -->   
+        <input type="Number" name="Zipcode", id="Zipcode" placeholder="Zipcode">
+        <button id="submit"> Submit </button>
+    </p>        
+
+    <!--  Using a span so we can call the getElementById method on the Js file and collect the user value that way-->
+    <p  id="style">  The state you looked up using the API is: <span id="input"> </span>
+
+
+    </p> 
+    
+</body>
+</html>
